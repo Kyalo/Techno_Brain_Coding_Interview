@@ -37,15 +37,16 @@ def get_ips():
 
     # create dict of ip address and frequency of occurence
     ip_dict = {}
+    indices = []
     for ip in new_ips:
         indices = [i for i, x in enumerate(ips) if x == ip]
         ip_dict[ip] = len(indices)
 
     # sort the dictionary of ip addresses and the frequency of occurence
-    ip_dict = dict(sorted(ip_dict.items(), key=lambda item: item[1]))
+    ip_dict = dict(sorted(ip_dict.items(), key=lambda item: item[1], reverse=True))
 
-    # return the ips in descending order of frequency
-    ips = [x for x in list(ip_dict)[::-1]]
+    ips = [(key, ip_dict[key]) for key in ip_dict]
+
     return ips
         
 

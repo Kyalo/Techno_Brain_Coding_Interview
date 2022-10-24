@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 
 
-def reverse_string(s){
+def reverse_string(s):
     '''
     Reverse the sentence s
     '''
     words = s.split()
-    words = reverse(words)
+    words = reversed(words)
     return " ".join(words)
 
-}
 
 s = str(input("Enter the string s: "))
 
