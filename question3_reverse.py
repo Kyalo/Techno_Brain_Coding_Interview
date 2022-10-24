@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env python3
 # Author: Maurice Kyalo
 # Filename: question3_reversed.py
 

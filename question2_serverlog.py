@@ -1,6 +1,6 @@
-#!/usr/bin/bash
-# Filename: question3_serverlog.py
+#!/usr/bin/env python3
 # Author: Maurice Kyalo
+# Filename: question3_serverlog.py
 
 import re
 
