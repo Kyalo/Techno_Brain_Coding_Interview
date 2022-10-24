@@ -1,11 +1,12 @@
-# Author: Maurice Kyalo
-# Filename: qustion3_reversed.py
-
 #!/usr/bin/bash
-# Returns a string of words in reverse order concatenated by a single space
+# Author: Maurice Kyalo
+# Filename: question3_reversed.py
 
 
 def reverse_string(sentence):
+    '''
+    Returns a string of words in reverse order concatenated by a single space
+    '''
     words = sentence.split()
     words = list(reversed(words))
     return " ".join(words)
